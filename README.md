@@ -6,7 +6,8 @@ Here’s a breakdown of what it does:
 # url: setting the YouTube video's URL
 # lan: setting the audio output language
 
-url = 'https://youtu.be/yWMKYID5fr8'
+```python
+url = 'https://youtu.be/'
 lang = 'fr'
 
 if __name__ == '__main__':
@@ -22,19 +23,20 @@ if __name__ == '__main__':
     print(20*'*')
     print(text)
     text_to_audio(text, save_output_file='audio_ouput', language=lang)
+```
 
 The code starts by defining two variables: url and lang. The url variable should be set to the URL of the YouTube video you want to process, and the lang variable should be set to the desired language for the audio output.
 
 When executed, the script performs the following steps:
 
-Transcribing Audio: It uses the transcribe_audio function to download and transcribe the audio from the specified YouTube video. The transcribed text is stored in the text variable.
+<mark>Transcribing Audio</mark>: It uses the transcribe_audio function to download and transcribe the audio from the specified YouTube video. The transcribed text is stored in the text variable.
 
-Saving Transcripts: The script saves the transcribed text to a file named transcribe_text.txt using the save_transcript function.
+<mark>Saving Transcripts</mark>: The script saves the transcribed text to a file named transcribe_text.txt using the save_transcript function.
 
-Summarizing Text: It generates a summary of the transcribed text using the summarize_text function with the specified model name (text-davinci-003 or other) and input file (transcribe_text.txt). The summary is stored in the text variable.
+<mark>Summarizing Text</mark>: It generates a summary of the transcribed text using the summarize_text function with the specified model name (text-davinci-003 or other) and input file (transcribe_text.txt). The summary is stored in the text variable.
 
-Saving Summaries: The script saves the generated summary to a file named summary_english.txt using the save_summary_text function.
+Saving Summaries</mark>: The script saves the generated summary to a file named summary_english.txt using the save_summary_text function.
 
-Language Translation: It translates the summary text into another language specified by the lang variable using the translate_language function. The translated text is stored in the text variable.
+<mark>Language Translation</mark>: It translates the summary text into another language specified by the lang variable using the translate_language function. The translated text is stored in the text variable.
 
-Text-to-Audio Conversion: Finally, the script converts the translated text into an audio file in the specified language using the text_to_audio function. The resulting audio file is saved as audio_output.
+<mark>Text-to-Audio Conversion</mark>: Finally, the script converts the translated text into an audio file in the specified language using the text_to_audio function. The resulting audio file is saved as audio_output.
