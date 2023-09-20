@@ -2,9 +2,9 @@ The code snippet is a Python script that performs several tasks related to YouTu
 At this software version the YoutubeLoader function of langchain library is used to download and transcript the youtube video audio to text.
 Here’s a breakdown of what it does:
 
-To use the program change the url and lang
-url: setting the YouTube video's URL
-lan: setting the audio output language
+To use the program change the url and lang, 
+with url: setting the YouTube video's URL, 
+and with lang: setting the audio output language
 
 ```python
 url = 'https://youtu.be/'
